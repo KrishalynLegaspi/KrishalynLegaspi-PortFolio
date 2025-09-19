@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Overview</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+     <!-- Navbar -->
+    <nav>
+    <img src="Logo2.png" class="logo" alt="logo">
+     <ul>
+    <li><a href="Index.html">Home</a></li>
+    <li><a href="Aboutme.html">About Me</a></li>
+    <li>
+      <a href="#">Works ▾</a>
+      <ul class="dropdown">
+        <li><a href="WorkAcademic.Html">Work</a></li>
+        <li><a href="WorkAcademic.Html">Academic</a></li>
+      </ul> <!-- dropdown closes here -->
+    </li> 
+    <li><a href="Achievements.html">Achievements</a></li>
+    <li class="menu-button"><a onclick="toggleSidebar()">☰</a></li>
+  </ul>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a onclick="closeSidebar()">✕</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="Skills.html">Skills</a></li>
+      <li><a href="Contactme.html">Contacts</a></li>
+      <li><a href="resume.pdf" download>Download Resume</a></li>
+    </ul>
+  </div>
+  
+  <div class="container">
+    <section class="header-skills">
+      <h1>My Skills</h1>
+      <p>Technical expertise and soft skills overview</p>
+    </section>
+
+    <section class="content-skills">
+      <div class="skills-section">
+        <h2 class="section-title">💻 Technical Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Proficiency</th>
+              <th>Experience</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="skill-name">Java</td>
+              <td class="rating">
+                <span class="stars">★★☆☆☆</span>
+                <span class="rating-text">Basic</span>
+              </td>
+              <td>1+ years</td>
+            </tr>
+            <tr>
+              <td class="skill-name">HTML/CSS</td>
+              <td class="rating">
+                <span class="stars">★★★☆☆</span>
+                <span class="rating-text">Intermediate</span>
+              </td>
+              <td>3+ years</td>
+            </tr>
+            <tr>
+              <td class="skill-name">Graphic Design</td>
+              <td class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-text">Advanced</span>
+              </td>
+              <td>4+ years</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="skills-section">
+        <h2 class="section-title">🤝 Soft Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Proficiency</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="skill-name">Communication</td>
+              <td class="rating">
+                <span class="stars">★★★☆☆</span>
+                <span class="rating-text">Good</span>
+              </td>
+              <td>Clear verbal and written communication</td>
+            </tr>
+            <tr>
+              <td class="skill-name">Problem Solving</td>
+              <td class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">Excellent</span>
+              </td>
+              <td>Analytical thinking and creative solutions</td>
+            </tr>
+            <tr>
+              <td class="skill-name">Team Collaboration</td>
+              <td class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-text">Strong</span>
+              </td>
+              <td>Works well in diverse team environments</td>
+            </tr>
+            <tr>
+              <td class="skill-name">Leadership</td>
+              <td class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-text">Strong</span>
+              </td>
+              <td>Mentoring and guiding team members</td>
+            </tr>
+            <tr>
+              <td class="skill-name">Time Management</td>
+              <td class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-text">Strong</span>
+              </td>
+              <td>Efficient prioritization and deadline management</td>
+            </tr>
+            <tr>
+              <td class="skill-name">Adaptability</td>
+              <td class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">Excellent</span>
+              </td>
+              <td>Quick to learn and adapt to new technologies</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  </script>
+
+  <script>
+  function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('active');
+  }
+
+  function closeSidebar() {
+    document.getElementById('sidebar').classList.remove('active');
+  }
+</script>
+</body>
+</html>

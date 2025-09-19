@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MKL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <img src="Logo2.png" class="logo" alt="logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Aboutme.html">About Me</a></li>
+      <li>
+        <a href="#">Works ▾</a>
+        <ul class="dropdown">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#academic">Academic</a></li>
+        </ul>
+      </li>
+      <li><a href="Achievements.html">Achievements</a></li>
+      <li class="menu-button"><a onclick="toggleSidebar()">☰</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a onclick="closeSidebar()">✕</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="Skills.html">Skills</a></li>
+      <li><a href="Contactme.html">Contacts</a></li>
+      <li><a href="resume.pdf" download>Download Resume</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <!-- Home Section -->
+    <div class="intro">
+      <h1>OVERVIEW</h1>
+      <p>Explore my work and academic projects below</p>
+      
+      <div class="pinterest-box">
+        <h3 style="color: #7a9172; margin-bottom: 15px;">Find me on Pinterest</h3>
+        <a href="https://pinterest.com/KrixalynL" class="pinterest-link" target="_blank">Visit My Pinterest</a>
+      </div>
+    </div>
+
+    <!-- Work Section -->
+    <div class="work-section">
+      <h2>Work Experiences</h2>
+      <p class="section-description">Freelance client work</p>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+          <div class="project-image work-image-1">
+            <img src="Work1.png" alt="Project 1: Simon's Heart" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-title">Simon's Heart</div>
+            <div class="project-description">Created a red and gray themed social media advertisement for both Instagram and Facebook. A non-government organization protecting athletes and children from heart-related diseases.</div>
+            <a href="https://www.facebook.com/simonsheart.org" target="_blank" class="btn btn-work">View</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+          <div class="project-image work-image-2">
+            <img src="Work2.png" alt="Project 2: Powerchord" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-title">Powerchord</div>
+            <div class="project-description">Created a cyan and teal themed social media advertisement for both Instagram and Facebook. The company is for creating social media technology shortcuts to make it more easier to use for companies.</div>
+            <a href="https://www.facebook.com/PowerChordInc" target="_blank" class="btn btn-work">View</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+          <div class="project-image work-image-3">
+            <img src="Work3.png" alt="Project 3: Immigrant KnowHow" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-title">Immigrant KnowHow</div>
+            <div class="project-description">Created a blue and gray themed social media advertisement for both Instagram and Facebook. This ad is for those immigrants or overseas workers.</div>
+            <a href="https://www.facebook.com/profile.php?id=61576971584228" target="_blank" class="btn btn-work">View</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card">
+          <div class="project-image work-image-4">
+            <img src="Work4.png" alt="Project 4: Life and Breath Foundation" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-title">Life and Breath Foundation</div>
+            <div class="project-description">Created a blue and white themed social media advertisement for both Instagram and Facebook. It's a non-government organization that specializes for those who have sarcoidosis</div>
+            <a href="https://www.facebook.com/lifeandbreath" target="_blank" class="btn btn-work">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Academic Section -->
+    <div class="work-section" id="academic">
+      <h2>Academic Experiences</h2>
+      <p class="section-description">More on graphic designs and leadership which you can see in my resume and Pinterest.</p>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+          <div class="project-image academic-image-1">
+            <img src="Academic1.jpg" alt="Outreach Program Committee" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-title">Outreach Program Committee</div>
+            <div class="project-description">A team dedicated to organizing community-centered initiatives that extend support, compassion, and resources to those in need. Credited for developing the official outreach publicity materials as P.I.O of Multimedia Graphics and Video Edit.</div>
+            <a href="https://www.facebook.com/Pcushsserves" target="_blank" class="btn btn-academic">OPC</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+          <div class="project-image academic-image-2">
+            <img src="Academic2.jpg" alt="ACTS organization" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-title">ACTS organization</div>
+            <div class="project-description">A student-led movement that fosters kindness and empathy through small but meaningful actions of service and support. Recognized for crafting creative campaigns and visual content as Multimedia Head.</div>
+            <a href="https://www.facebook.com/profile.php?id=61569670473906" target="_blank" class="btn btn-academic">ACTS</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+          <div class="project-image academic-image-3">
+            <img src="Academic3.jpg" alt="STEM INTRAMURALS" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-title">STEM INTRAMURALS</div>
+            <div class="project-description">A celebration of teamwork, skills, and sportsmanship among STEM students through friendly competitions and spirited activities. Served as lead designer for event graphics and promotions as Multimedia Manager.</div>
+            <a href="https://example.com/design-research-group" target="_blank" class="btn btn-academic">STEM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </div>
+
+    <script>
+      function toggleSidebar() {
+        document.getElementById('sidebar').classList.toggle('active');
+      }
+
+      function closeSidebar() {
+        document.getElementById('sidebar').classList.remove('active');
+      }
+    </script>
+</body>
+</html>

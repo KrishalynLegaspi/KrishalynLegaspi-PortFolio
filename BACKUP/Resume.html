@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Krishalyn Legaspi</title>
+  <link rel="stylesheet" href="Style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 30px;
+      border: 2px solid #7a9172;
+      border-radius: 8px;
+    }
+
+    h1, h2, h3 {
+      color: #7a9172;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      border-bottom: 3px solid #7a9172;
+      padding-bottom: 10px;
+    }
+
+    .contact {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 2px solid #7a9172;
+      margin-bottom: 10px;
+      padding-bottom: 4px;
+      color: #7a9172;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .skill-bar {
+      background: #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      height: 8px;
+    }
+
+    .skill-bar span {
+      display: block;
+      height: 100%;
+      background: #7a9172;
+    }
+
+    .sub-title {
+      font-weight: bold;
+      color: #7a9172;
+    }
+  </style>
+</head>
+<body>
+     <!-- Navbar -->
+    <nav>
+    <img src="Logo2.png" class="logo" alt="logo">
+     <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Aboutme.html">About Me</a></li>
+    <li>
+      <a href="#">Works ▾</a>
+      <ul class="dropdown">
+        <li><a href="WorkAcademic.Html">Work</a></li>
+        <li><a href="WorkAcademic.Html">Academic</a></li>
+      </ul> <!-- dropdown closes here -->
+    </li> <!-- Works li closes here -->
+    <li><a href="Achievements.html">Achievements</a></li>
+    <li class="menu-button"><a onclick="toggleSidebar()">☰</a></li>
+  </ul>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a onclick="closeSidebar()">✕</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="Skills.html">Skills</a></li>
+      <li><a href="Contactme.html">Contacts</a></li>
+      <li><a href="resume.pdf" download>Download Resume</a></li>
+    </ul>
+  </div>
+  
+  <div class="container">
+    <h1>MA. KRISHALYN ANNE V. LEGASPI</h1>
+    <div class="contact">
+      1145 Villa San Antonio St. Brgy. 754, Manila | Ma.krishalynlegaspi@gmail.com | 09399210307
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <div class="section-title">Skills / Proficiencies</div>
+      <div class="skills-grid">
+        <div><span class="sub-title">Design</span><br>Graphic Design, Photo Editing, Logo Design</div>
+        <div><span class="sub-title">Coding & Tech</span><br>HTML, CSS, Basic JS</div>
+        <div><span class="sub-title">Productivity</span><br>MS Word, PowerPoint, Excel, Docs</div>
+        <div><span class="sub-title">Soft Skills</span><br>Teamwork, Creativity, Leadership</div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
+      <ul>
+        <li><b>Manuel G. Araullo High School</b> | June 2019 - July 2023<br>
+        STEM Program - With High Honors</li>
+        <li><b>Philippine Christian University</b> | Aug 2023 - April 2025<br>
+        BS in STEM - With High Honors</li>
+      </ul>
+    </div>
+
+    <!-- Trainings -->
+    <div class="section">
+      <div class="section-title">Trainings & Leadership</div>
+      <ul>
+        <li>Graphics Head – Outreach Program Committee | Aug 2023 - Apr 2025</li>
+        <li>Head of Multimedia – - PCU-SHS ACTS Organization | Aug 2023 - Apr 2025</li>
+        <li>Graphic Designer – PCU STEM Intramurals | Feb 2024 - Mar 2025</li>
+        <li>Leadership Training – PCU-SHS Supreme Government | Nov 2023</li>
+      </ul>
+    </div>
+
+    <!-- Seminars -->
+    <div class="section">
+      <div class="section-title">Seminars & Involvement</div>
+      <ul>
+        <li>Webinar (YES 4C) - Technical Committee | Feb 2020</li>
+        <li>Technical Committee – Research Congress | Oct 2024</li>
+        <li>Research Congress – PCU | Feb 2023</li>
+        <li>Work Immersion (Encoder) – DPS | Mar 2024</li>
+      </ul>
+    </div>
+
+    <!-- Achievements -->
+    <div class="section">
+      <div class="section-title">Achievements</div>
+      <ul>
+        <li><b>Scaling Up Literacy Skills Amidst and Beyond the Pandemic</b> - 1st Place</li>
+        <li><b>Art of Alliance - PCU SOCIAL SCIENCE CLUB</b> - 3rd Place</li>
+        <li><b>DOST Indie-Siyensya Film Entry </b> - Film Competition</li>
+        <li><b>Manila Intellectual Property, Innovation and Business Incubation Expo</b> - Silver Medal - Physical Science</li>
+        <li><b>Champion</b> - Literary Contest</li>
+        <li>Certificate of Accomplishment: Technical Skills - HTML, CSS, JS</li>
+      </ul>
+    </div>
+
+    <!-- Experience -->
+    <div class="section">
+      <div class="section-title">Experiences</div>
+      <ul>
+        <li>Freelance Graphic Design – Powerchord| 2025 - 2025 </li>
+        <li>Freelance – Simons Heart | July 2023 - Present</li>
+        <li>Freelance – Teachhive.ai | July 2025 - Present</li>
+      </ul>
+    </div>
+
+    <!-- Additional Info -->
+    <div class="section">
+      <div class="section-title">Additional Information</div>
+      <ul>
+        <li>Languages: English and Filipino</li>
+        <li>Birthdate: March 13, 2007</li>
+        <li>Nationality: Filipino</li>
+      </ul>
+    </div>
+      </script>
+
+  <script>
+  function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('active');
+  }
+
+  function closeSidebar() {
+    document.getElementById('sidebar').classList.remove('active');
+  }
+</script>
+  </div>
+</body>
+</html>

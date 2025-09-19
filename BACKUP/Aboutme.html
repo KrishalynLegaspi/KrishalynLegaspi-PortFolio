@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MKL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <img src="Logo2.png" class="logo" alt="logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Aboutme.html">About Me</a></li>
+      <li>
+        <a href="#">Works ▾</a>
+        <ul class="dropdown">
+          <li><a href="WorkAcademic.Html">Work</a></li>
+          <li><a href="WorkAcademic.Html">Academic</a></li>
+        </ul>
+      </li>
+      <li><a href="Achievements.html">Achievements</a></li>
+      <li class="menu-button"><a onclick="toggleSidebar()">☰</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a onclick="closeSidebar()">✕</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="Skills.html">Skills</a></li>
+      <li><a href="Contactme.html">Contacts</a></li>
+      <li><a href="resume.pdf" download>Download Resume</a></li>
+    </ul>
+  </div>
+
+  <!-- FIXED HERO HEADER: Now uses consistent .header-skills style -->
+  <section class="header-skills">
+    <div class="container">
+      <div class="profile-pic">💻</div>
+      <h1>KRISHALYN LEGASPI</h1>
+      <p class="subtitle">Computer Science Student & Aspiring Developer</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- About Section -->
+    <section class="hover-pad">
+      <h2>WELCOME!</h2>
+      <p>I'm a passionate computer science student with a love for problem-solving and creating innovative solutions. Currently pursuing my degree while exploring various areas of technology.</p>
+      
+      <div class="grid">
+        <div>
+          <h3>Current Focus Areas:</h3>
+          <ul>
+            <li>Web Development</li>
+            <li>Basic coding</li>
+            <li>Graphic Design</li>
+            <li>Social Media Advertisement</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Learning Journey:</h3>
+          <ol>
+            <li>Started with HTML basics</li>
+            <li>Learning web development (HTML, CSS, JS)</li>
+            <li>Exploring the world of languages</li>
+            <li>Currently working as a graphic designer</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="hover-pad">
+      <h2>Technical Skills</h2>
+      <div class="grid">
+        <div>
+          <h3>Programming Languages:</h3>
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Tools & Technologies:</h3>
+          <ul>
+            <li>VS CODE</li>
+            <li>Canva</li>
+            <li>IbisPaint X</li>
+            <li>Notepad++</li>
+            <li>Arduino IDE</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Soft Skills:</h3>
+          <ul>
+            <li>Designing</li>
+            <li>Team Collaboration</li>
+            <li>Quick Learning</li>
+            <li>Attention to Detail</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+      <h2>Featured Project</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <div class="project-icon">🌱</div>
+          <h3 class="project-title">EcoAuto Humidifier</h3>
+          <p>An automated Humidifier that calculates the air and adjust the temperature of the fan for optimalization.</p>
+          <h4>Features:</h4>
+          <ul>
+            <li>Automated</li>
+            <li>Self Adjusting</li>
+            <li>Eco-friendly suggestions</li>
+          </ul>
+          <a href="Project.html" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+
+    function closeSidebar() {
+      document.getElementById('sidebar').classList.remove('active');
+    }
+  </script>
+</body>
+</html>

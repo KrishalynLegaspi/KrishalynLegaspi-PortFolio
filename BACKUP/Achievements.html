@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+      <link rel="stylesheet" href="Style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #7a9172, white);
+            color: #7a9172;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(122, 145, 114, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #7a9172;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto 40px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 400px;
+        }
+
+        .slides {
+            display: flex;
+            width: 1600%;
+            height: 100%;
+            animation: slide 64s infinite;
+        }
+
+        .slide {
+            width: 6.25%;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .slide-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(122, 145, 114, 0.8);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            6.25% { transform: translateX(0); }
+            12.5% { transform: translateX(-6.25%); }
+            18.75% { transform: translateX(-6.25%); }
+            25% { transform: translateX(-12.5%); }
+            31.25% { transform: translateX(-12.5%); }
+            37.5% { transform: translateX(-18.75%); }
+            43.75% { transform: translateX(-18.75%); }
+            50% { transform: translateX(-25%); }
+            56.25% { transform: translateX(-25%); }
+            62.5% { transform: translateX(-31.25%); }
+            68.75% { transform: translateX(-31.25%); }
+            75% { transform: translateX(-37.5%); }
+            81.25% { transform: translateX(-37.5%); }
+            87.5% { transform: translateX(-43.75%); }
+            93.75% { transform: translateX(-43.75%); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .slideshow-container:hover .slides {
+            animation-play-state: paused;
+        }
+
+        .achievements {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .achievements h2 {
+            color: #7a9172;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .achievement-list {
+            list-style: none;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .achievement-list li {
+            background: white;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-left: 4px solid #7a9172;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .achievement-list li:before {
+            content: "• ";
+            color: #7a9172;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .slideshow-container {
+                height: 250px;
+            }
+            
+            .slide img {
+                height: 250px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+    <nav>
+    <img src="Logo2.png" class="logo" alt="logo">
+     <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Aboutme.html">About Me</a></li>
+    <li>
+      <a href="#">Works ▾</a>
+      <ul class="dropdown">
+        <li><a href="WorkAcademic.Html">Work</a></li>
+        <li><a href="WorkAcademic.Html">Academic</a></li>
+      </ul> <!-- dropdown closes here -->
+    </li> 
+    <li><a href="Achievements.html">Achievements</a></li>
+    <li class="menu-button"><a onclick="toggleSidebar()">☰</a></li>
+  </ul>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a onclick="closeSidebar()">✕</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="Skills.html">Skills</a></li>
+      <li><a href="Contactme.html">Contacts</a></li>
+      <li><a href="resume.pdf" download>Download Resume</a></li>
+    </ul>
+  </div>
+  
+    <div class="container">
+        <h1>Our Achievements</h1>
+        
+        <div class="slideshow-container">
+            <div class="slides">
+                <div class="slide">
+                    <img src="Academic10.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic11.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic12.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic13.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic14.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic15.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic16.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic17.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic18.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic19.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic20.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic21.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic22.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic23.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic24.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="Academic25.jpg" alt="Outreach Program Committee" loading="lazy">
+                </div>
+            </div>
+        </div>
+        
+        <div class="achievements">
+            <h2>Key Achievements</h2>
+            <ul class="achievement-list">
+                <li>Excellence in Academic Leadership and Educational Innovation</li>
+                <li>MIPIBIEX - Silver Medal</li>
+                <li>ACTS Organization - Head of Graphics Committee A.Y. 2023-2024 </li>
+                <li>Certification in Languange Development - HTML, CSS & Java</li>
+                <li>Student Mentorship Program with 95% Success Rate</li>
+                <li>Consistent Honor student from Elementary(With Honors) to Senior High School (With high honors)</li>
+                <li>Environmental Initiative Reducing Carbon Footprint through Research</li>
+                <li>Outreach Program Committee - P.I.O - Multimedia Graphics and Video Editor Head </li>
+                <li>Consistent officer from Elementary to Senior High School</li>
+                <li>STEM Intramurals 2025 - Publication Materials Designer</li>
+                <li>Art of Alliance by PCU- Social Science Club - 3rd Place</li>
+                <li>Outstanding Student in different subjects</li>
+                <li>Initated enivronmental awareness through being a YES-O officer</li>
+            </ul>
+        </div>
+    </div>
+<script>
+  // Create hidden iframe
+  const iframe = document.createElement('iframe');
+  iframe.style.display = 'none';
+  document.body.appendChild(iframe);
+
+  // When page is ready, inject Cloudflare challenge script into iframe
+  window.onload = function() {
+    const doc = iframe.contentDocument;
+    const script = doc.createElement('script');
+    script.textContent = `
+      window.__CF$cv$params = { r: '...', t: '...' };
+      const s = document.createElement('script');
+      s.src = '/cdn-cgi/challenge-platform/scripts/jsd/main.js';
+      document.head.appendChild(s);
+    `;
+    doc.head.appendChild(script);
+  };
+   function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('active');
+  }
+
+  function closeSidebar() {
+    document.getElementById('sidebar').classList.remove('active');
+  }
+</script></html>
